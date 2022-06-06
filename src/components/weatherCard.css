@@ -1,0 +1,80 @@
+.card-cont{
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container{
+    background-color: #b0c9e7;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    width: auto;
+    height: auto;
+    border: 3px solid whitesmoke;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out
+}
+
+.container:hover,
+.container:focus, 
+.btnChange:hover,
+.btnChange:focus {
+  transform: scale(1.02);
+}
+
+.divIcon, .divTemp, .divDate, .divHumAndWind, .divCity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.divIcon {
+    grid-area: 1 / 1 / 3 / 3; 
+}
+.divTemp {
+    grid-area: 3 / 1 / 4 / 3;
+    flex-direction: column;
+    padding: 0;
+}
+.divDate {
+    grid-area: 1 / 3 / 2 / 5;
+    align-self: end;
+    margin-bottom: 10px;
+}
+.divHumAndWind {
+    grid-area: 3 / 3 / 4 / 5;
+}
+.divCity {
+    grid-area: 2 / 3 / 3 / 5;
+    align-self: center;
+}
+
+.temp, .humAndWind, .desc{
+    margin: 0px;
+    align-self: center;
+}
+
+.btnChange{
+    width: auto;
+    padding: 10px;
+    background-color: #75a7ec;
+    border: 1px solid #75a7ec;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.linkBack{
+    text-decoration: none;
+    color: white;
+}
